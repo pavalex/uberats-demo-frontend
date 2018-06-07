@@ -1,15 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Uber Eats</title>
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/flexboxgrid2.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.1.0/flexboxgrid2.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <div class="header_wrap">
+                <div class="header_logo">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+                <div class="header_form">
+                    <input type="text"> to
+                    <input type="text">
+                </div>
+                <div class="header_enter">
+                    <a href="#" class="header_button">Sign In</a>
+                    <a href="#" class="header_button">Register</a>
+                    <img class="header_basket" src="./images/basket.jpg" alt="basket">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Search  -->
+    <section class="search">
+        <div class="container">
+            <div class="search_rest">
+                <img class="search_rest-img" src="./images/Shape.png" alt="search">
+                <span class="search_rest-txt">Search for restaurant or cuisine</span>
+            </div>
+        </div>
+    </section>
+    <!-- Restaurants -->
+    <section class="restaurants">
+        <div class="container">
+            <h1 class="restaurants_title">Moscow Restaurants</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="restaurants-item restaurants-item_first">
+                        <div class="restaurants-img">
+                            <img class="restaurants-img-photo" src="./images/McDonalds.jpg" alt="McDonalds">
+                        </div>
+                        <div class="restaurants-txt">
+                            <p class="restaurants-txt-head">Макдоналдс — Газетный</p>
+                            <p class="restaurants-txt-product">₽₽ • Бургеры</p>
+                            <p class="restaurants-txt-wait">25 - 35 Min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="restaurants-item ">
+                        <div class="restaurants-img">
+                            <img class="restaurants-img-photo" src="./images/DimSum.jpg" alt="DimSum">
+                        </div>
+                        <div class="restaurants-txt">
+                            <p class="restaurants-txt-head">DimSum & Co — ЦДМ</p>
+                            <p class="restaurants-txt-product">₽₽ • Бургеры</p>
+                            <p class="restaurants-txt-wait">25 - 35 Min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="restaurants-item restaurants-item_last">
+                        <div class="restaurants-img">
+                            <img class="restaurants-img-photo" src="./images/Dvizok.jpg" alt="Dvizok">
+                        </div>
+                        <div class="restaurants-txt">
+                            <p class="restaurants-txt-head">ДвижОК — Манежная</p>
+                            <p class="restaurants-txt-product">₽₽ • Бургеры</p>
+                            <p class="restaurants-txt-wait">25 - 35 Min</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="restaurants-item restaurants-item_first">
+                        <div class="restaurants-img">
+                            <img class="restaurants-img-photo" src="./images/nha.jpg" alt="nha">
+                        </div>
+                        <div class="restaurants-txt">
+                            <p class="restaurants-txt-head">НЯ — NHA</p>
+                            <p class="restaurants-txt-product">₽₽ • Вьетнамская</p>
+                            <p class="restaurants-txt-wait">30 - 40 Min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="restaurants-item ">
+                        <div class="restaurants-img">
+                            <img class="restaurants-img-photo" src="./images/dzi.jpg" alt="dzi">
+                        </div>
+                        <div class="restaurants-txt">
+                            <p class="restaurants-txt-head">Точка Дзы — Цветной</p>
+                            <p class="restaurants-txt-product">₽₽ • Вьетнамская</p>
+                            <p class="restaurants-txt-wait">40 - 50 Min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="restaurants-item restaurants-item_last">
+                        <div class="restaurants-img">
+                            <img class="restaurants-img-photo" src="./images/cinnabom.png" alt="cinnabom">
+                        </div>
+                        <div class="restaurants-txt">
+                            <p class="restaurants-txt-head">Cinnabon</p>
+                            <p class="restaurants-txt-product">₽ • Выпечка • Десерты • Капкейки</p>
+                            <p class="restaurants-txt-wait">25 - 35 Min</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="restaurants-item restaurants-item_first">
+                        <div class="restaurants-img">
+                            <img class="restaurants-img-photo" src="./images/pizza.jpg" alt="pizza">
+                        </div>
+                        <div class="restaurants-txt">
+                            <p class="restaurants-txt-head">PIZZELOVE</p>
+                            <p class="restaurants-txt-product">₽₽ • Пицца</p>
+                            <p class="restaurants-txt-wait">15 - 25 Min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="restaurants-item ">
+                        <div class="restaurants-img">
+                            <img class="restaurants-img-photo" src="./images/zu.jpg" alt="zu">
+                        </div>
+                        <div class="restaurants-txt">
+                            <p class="restaurants-txt-head">Zю кафе — Тверская</p>
+                            <p class="restaurants-txt-product">₽₽ • Японская</p>
+                            <p class="restaurants-txt-wait">25 - 35 Min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="restaurants-item restaurants-item_last">
+                        <div class="restaurants-img">
+                            <img class="restaurants-img-photo" src="./images/barbq.jpg" alt="barbq">
+                        </div>
+                        <div class="restaurants-txt">
+                            <p class="restaurants-txt-head">Bar BQ Cafe — Манежная</p>
+                            <p class="restaurants-txt-product">₽₽₽ • Европейская</p>
+                            <p class="restaurants-txt-wait">30 - 40 Min</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_logo">
+                <img class="footer_logo_photo" src="./images/footer-logo.png" alt="footer_logo">
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer_social">
+                        <input type="text"><br>
+                        <a href="#"><span>#</span>UberEats</a><br>
+                        <a href="#" target="_blank"><img src="./images/facebook.png" alt="facebook"></a>
+                        <a href="#" target="_blank"><img src="./images/twitter.png" alt="twitter"></a>
+                        <a href="#" target="_blank"><img src="./images/instagram.png" alt="instagram"></a>
+                    </div>                    
+                </div>
+                <div class="col-md-3">
+                    <div class="footer_social">
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer_social">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
