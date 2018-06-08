@@ -14,15 +14,19 @@
 
 <body>
     <!-- header -->
-    <header class="header">
+    <header class="header" id="top">
         <div class="container">
             <div class="header_wrap">
-                <div class="header_logo">
+                <div class="header__logo">
                     <img src="images/logo.png" alt="logo">
                 </div>
-                <div class="header_form">
-                    <input type="text"> to
-                    <input type="text">
+                <div class="header__form">
+                    <form action="#">
+                        <input class="header__form-top header__form-top_left" type="text" placeholder="ASAP">
+                        <span class="header__form_txt">to</span>
+                        <input class="header__form-top header__form-top_right" type="text" placeholder="ul. Bolshaya Dmitrovka,22 ">
+                    </form>
+                    <img class="header__form_location" src="./images/location.png" alt="location">
                 </div>
                 <div class="header_enter">
                     <a href="#" class="header_button">Sign In</a>
@@ -164,29 +168,94 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer_logo">
+            <div class="footer__logo">
                 <img class="footer_logo_photo" src="./images/footer-logo.png" alt="footer_logo">
             </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="footer_social">
-                        <input type="text"><br>
-                        <a href="#"><span>#</span>UberEats</a><br>
-                        <a href="#" target="_blank"><img src="./images/facebook.png" alt="facebook"></a>
-                        <a href="#" target="_blank"><img src="./images/twitter.png" alt="twitter"></a>
-                        <a href="#" target="_blank"><img src="./images/instagram.png" alt="instagram"></a>
-                    </div>                    
-                </div>
-                <div class="col-md-3">
-                    <div class="footer_social">
-
+            <div class="footer__social">
+                <div class="footer__social_left">
+                    <div class="footer__form">
+                        <form action="#">
+                            <select name="language" class="footer__select">
+                                <option value="French">FRENCH</option>
+                                <option value="Russia">RUSSIA</option>
+                                <option value="English" selected>ENGLISH</option>
+                            </select>
+                            <div class="footer__select_before">
+                                <img src="./images/after.png" alt="after">
+                            </div>
+                        </form>
                     </div>
+                    <a href="#" class="footer__ubereats">
+                        <span class="footer__ubereats_tag">#</span>UberEats</a>
+                    <a href="#" target="_blank">
+                        <img class="footer__facebook" src="./images/facebook.png" alt="facebook">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img class="footer__twitter" src="./images/twitter.png" alt="twitter">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img class="footer__instagram" src="./images/instagram.png" alt="instagram">
+                    </a>
                 </div>
-                <div class="col-md-3">
-                    <div class="footer_social">
-
+                <div class="footer__social_middle">
+                    <ul class="footer__list">
+                        <li class="footer__link footer__link_social">
+                            <a href="#">About UberEats</a>
+                        </li>
+                        <li class="footer__link footer__link_social">
+                            <a href="#">Become a Delivery Partner</a>
+                        </li>
+                        <li class="footer__link footer__link_social">
+                            <a href="#">Become a Restaurant Partner</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__social_right">
+                    <ul class="footer__list footer__list_right">
+                        <li class="footer__link footer__link_social">
+                            <a href="#">See all cities</a>
+                        </li>
+                        <li class="footer__link footer__link_social">
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li class="footer__link footer__link_social">
+                            <a href="#">Help</a>
+                        </li>
+                        <li class="footer__link footer__link_social">
+                            <a href="#">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__store">
+                <div class="footer__app">
+                    <a href="#" target="_blank">
+                        <img src="./images/appstore.png" alt="appstore">
+                    </a>
+                </div>
+                <div class="footer__play">
+                    <a href="#" target="_blank">
+                        <img src="./images/googleplay.png" alt="googleplay">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <ul class="footer__list footer__copyright_list">
+                    <li class="footer__link footer__link_copyright">
+                        <a href="#">&copy; 2017 Uber Technologies Inc.</a>
+                    </li>
+                    <li class="footer__link footer__link_copyright">
+                        <a href="#">Privacy</a>
+                    </li>
+                    <li class="footer__link footer__link_copyright">
+                        <a href="#">Terms</a>
+                    </li>
+                </ul>
+                <a href="#top">
+                    <div class="footer__up">
+                        <img class="footer__arrow-up" src="./images/arrow-up.png" alt="arrow-up">
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </footer>
