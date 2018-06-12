@@ -24,7 +24,6 @@ body {
 
 .header__logo,
 .footer__logo {
-    padding-left: 3rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
@@ -68,10 +67,6 @@ body {
     color: #626262;
 }
 
-.header_enter {
-    margin-right: 3rem;
-}
-
 .header_button {
     font-size: 1.3rem;
     line-height: 2.4rem;
@@ -95,6 +90,18 @@ body {
     cursor: pointer;
 }
 
+@media screen and (max-width:991px) {
+    .header__form {
+        display: none;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .header_basket {
+        display: none;
+    }
+}
+
 /* Search */
 
 .search {
@@ -102,8 +109,6 @@ body {
 }
 
 .search_rest {
-    max-width: 111.1rem;
-    margin: 0 auto;
     border-bottom: 1px solid rgba(117, 117, 117, 0.3);
 }
 
@@ -123,7 +128,6 @@ body {
 /* Restaurants */
 
 .restaurants_title {
-    margin-left: 3rem;
     margin-top: 5rem;
     font-size: 2.2rem;
     line-height: 3.4rem;
@@ -132,8 +136,7 @@ body {
 }
 
 .restaurants-item {
-    width: 31.8rem;
-    margin: 0 auto;
+    text-decoration: none;
     transition: all 0.3s;
 }
 
@@ -141,16 +144,14 @@ body {
     background-color: rgba(117, 117, 117, 0.04);
 }
 
-.restaurants-img-photo {
-    width: 31.8rem;
-    height: 256px;
+.restaurants__img {
+    width: 100%;
+    max-width: 100%;
 }
 
-.restaurants-txt {
-    text-align: left;
-}
 
 .restaurants-txt-head {
+    text-align: left;
     color: #1d1d1d;
     font-size: 1.6rem;
     line-height: 2.4rem;
@@ -172,6 +173,12 @@ body {
     padding-bottom: 2rem;
 }
 
+/*
+@media screen and (min-width:768px) and (max-width:991px) {
+    
+}
+*/
+
 /* Footer */
 
 .footer {
@@ -179,33 +186,20 @@ body {
 }
 
 .footer__logo {
-    max-width: 108rem;
-    margin: 0 auto;
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-.footer_logo_photo {
-    margin-left: -3rem;
-}
-
 .footer__social {
-    max-width: 111rem;
-    margin: 0 auto;
-    padding-bottom: 5rem;
-    display: flex;
-    justify-content: space-between;
     padding-top: 3rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-.footer__social_left,
-.footer__social_middle,
-.footer__social_right {
-    width: 33%;
-}
+.footer__form {}
 
 .footer__list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .footer__link {
@@ -226,6 +220,7 @@ body {
 .footer__form {
     position: relative;
     margin-bottom: 3rem;
+    width: 22.7rem;
 }
 
 .footer__select_before {
@@ -234,9 +229,17 @@ body {
     left: 2.5rem;
 }
 
+.footer__select_after {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    cursor: pointer;
+}
+
 .footer__select {
+    cursor: pointer;
+    width: 100%;
     color: #fff;
-    width: 22.7rem;
     height: 4rem;
     padding-left: 5rem;
     font-size: 1.3rem;
@@ -245,12 +248,13 @@ body {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background: url(/images/Arrow.png) 95% no-repeat #3b3b3b;
+    background-color: #3b3b3b;
 }
 
 .footer__ubereats {
     display: block;
     text-decoration: none;
+    margin-top: 2rem;
     margin-bottom: 2rem;
     color: #fff;
     font-size: 1.6rem;
@@ -271,8 +275,6 @@ body {
 .footer__store {
     display: flex;
     justify-content: center;
-    max-width: 111rem;
-    margin: 0 auto;
     padding-top: 3rem;
     padding-bottom: 3rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
@@ -290,13 +292,13 @@ body {
 
 .footer__copyright_list {
     display: flex;
-    justify-content: space-between;
-    margin-left: -1rem;
+    justify-content: space-around;
 }
 
-.footer__link_copyright {
-    width: 33%;
+.footer__link {
+    padding: 0;
 }
+
 
 .footer__link_copyright a {
     font-size: 1.1rem;
